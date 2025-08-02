@@ -1,0 +1,42 @@
+.banner{
+    .bannerBlock{
+        .bannerBlockParent{
+            cursor: pointer;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 650px;
+            background-size: cover;
+            background-position: 50% 30%;
+            background-repeat: no-repeat;
+            position: relative;
+            .bannerBlockText{
+                color: rgba(255, 255, 255, 1);
+                z-index: 1;
+                h1{
+                    font-size: 64px;
+                    font-weight: 600;
+                    margin-bottom: 45px;
+                    cursor: pointer;
+                }
+                p{
+                    font-size: 32px;
+                    font-weight: 400;
+                    cursor: pointer;
+                }
+            }
+        }
+        .bannerBlockParent::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+    }
+}

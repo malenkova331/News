@@ -1,0 +1,56 @@
+.newsSection{
+    .newsBlock{
+        padding: 55px 200px;
+        .newsBlockTitle{
+            font-size: 64px;
+            font-weight: 600;
+            margin-bottom: 60px;
+        }
+        .newsBlockParent{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr); 
+            gap: 40px;
+            .newsBlockChild{
+                height: 350px;
+                cursor: pointer;
+                .dateBlock{
+                    width: 82px;
+                    padding: 6px 18px;
+                    margin-bottom: 30px;
+                    background-color: rgba(236, 242, 245, 1);
+                    border-radius: 20px;
+                    color: rgba(108, 110, 123, 1);
+                    font-size: 16px;
+                    font-weight: 400;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    p{
+                        text-align: center;
+                    }
+                }
+                .newsBlockChildTitle{
+                    height: 86px;
+                    font-size: 32px;
+                    font-weight: 600;
+                    margin-bottom: 30px;
+                    cursor: pointer;
+                }
+                .newsBlockChildText{
+                    height: 81px;
+                    font-size: 20px;
+                    font-weight: 400;
+                    cursor: pointer;
+                }
+
+            }
+        }
+        .newsBlockButtons{
+            margin-top: 85px;
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+        }
+    }
+}
